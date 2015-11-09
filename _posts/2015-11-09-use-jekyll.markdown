@@ -10,6 +10,8 @@ header-img: "img/home-bg.jpg"
 
 你好，这是你第一个测试markdown的blog，我是正文
 
+# BLOCK ELEMENTS
+
 HEADERS
 
 这是一个H2
@@ -89,12 +91,14 @@ LISTS
 CODE BLOCKS
 
 这是个普通的段落
+
 	这是个代码段落
 	<?php
 		$a = 1;
 		$b = 1;
 		echo $a+$b;
 	?>
+	
 以上就是代码段
 		
 	
