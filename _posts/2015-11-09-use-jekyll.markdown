@@ -143,5 +143,17 @@ A backtick-delimited string in a code span: `` `foo` ``
 ``There is a literal backtick (`) here.``
 
 Please don't use any `<blink>` tags.
+
+IMAGES
+
+![haha1](http://img1.cache.netease.com/catchpic/3/3B/3B69F1C081FB9EA5A1850457683FD557.jpg)
+
+MISCELLANEOUS
+
+AUTOMATIC LINKS
+
+<http://www.baidu.com>
+
+<songjia3000@163.com>
 		
 	
