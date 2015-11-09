@@ -130,10 +130,18 @@ EMPHASIS
 
 我需要*single asterisks*我需要
 
-强调_single underscores_强调
+强调 _single underscores_ 强调
 
 **double asterisks**
 
 __double underscores__
+
+请使用`array_merge()`函数
+
+A backtick-delimited string in a code span: `` `foo` ``
+
+``There is a literal backtick (`) here.``
+
+Please don't use any `<blink>` tags.
 		
 	
