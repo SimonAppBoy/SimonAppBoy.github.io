@@ -1,12 +1,15 @@
 ---
 layout:     post
-title:      "学习jekyll编写blog"
+title:      "学习jekyll编写blog之语言篇"
 subtitle:   "markdown入门"
 date:   2015-11-09
 author:     "Simon"
 header-img: "img/home-bg.jpg"
 ---
 
+## 简介
+
+markdown是github发布页面，以及jekyll下编写blog的主要语言。语法介绍如后文所述。
 
 ## 块元素
 

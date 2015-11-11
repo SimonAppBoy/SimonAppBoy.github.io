@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "学习jekyll编写blog"
-subtitle:   "jekyll搭建&原理"
+title:      "学习jekyll编写blog(一)"
+subtitle:   "jekyll搭建&介绍"
 date:   2015-11-11
 author:     "Simon"
 header-img: "img/home-bg.jpg"
@@ -9,6 +9,42 @@ header-img: "img/home-bg.jpg"
 
 ## 搭建jekyll
 
+### 基本步骤
+
+大致分为4步:
+
+1. 注册github账号
+2. 创建Github Pages指定分支
+3. 搭建jekyll环境
+4. 本地编辑markdown，上传代码到指定分支
+
+### 关于github
+
+首先你需要在github注册一个账号，由于不是本文的主要topic，详情不表。
+
+### 关于github pages
+
+github提供了一种叫Github Pages的机制。它让开发者可以通过github来发布自己的，组织的，或者项目的静态主页。
+
+开发者可以通过github自己提供的自动页面生成器来完成静态主页的生成(主要是内容编辑，模板只有固定的github提供的几个)，也可以通过jekyll来自定义完成(样式较为自由)。
+
 ### jekyll是什么
 
-> Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过 Markdown （或者 Textile） 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。
+看看来自[官方网站](http://jekyll.bootcss.com/docs/home/)的定义:
+
+> Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过[Markdown](/2015/11/09/use-jekyll/)（或者 Textile） 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。
+
+### 为什么要用jekyll在github上搭建blog网站
+
+很多时候，自己的个人blog的个性化需求都无法在github上得到满足。因此亟需一个可以自己定义页面的机制存在，同时也要支持使用markdown编写blog内容（说实话，用html编写blog也行，但是实在太麻烦了。在这个点上md对我们简直太好了）。jekyll就应运而生。
+
+### 搭建
+
+	1. 安装Ruby
+	2. 安装RubyGems
+	3. gem install jekyll
+	4. jekyll new myblog
+	5. cd myblog
+	6. jekyll serve # => Now browse to http://localhost:4000
+	
+## jekyll介绍
