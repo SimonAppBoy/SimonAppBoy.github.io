@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      "学习jekyll编写blog(一)"
-subtitle:   "jekyll搭建&介绍"
+title:      "学习jekyll编写blog之搭建"
+subtitle:   "jekyll搭建"
 date:   2015-11-11
 author:     "Simon"
 header-img: "img/home-bg.jpg"
 ---
 
-## 搭建jekyll
+## 搭建一个简单的jekyll环境
 
 ### 基本步骤
 
@@ -26,13 +26,13 @@ header-img: "img/home-bg.jpg"
 
 github提供了一种叫Github Pages的机制。它让开发者可以通过github来发布自己的，组织的，或者项目的静态主页。
 
-开发者可以通过github自己提供的自动页面生成器来完成静态主页的生成(主要是内容编辑，模板只有固定的github提供的几个)，也可以通过jekyll来自定义完成(样式较为自由)。
+开发者可以通过github自己提供的自动页面生成器来完成静态主页的生成(主要是内容编辑，模板只有固定的github提供的几个)，也可以通过jekyll来自定义完成(样式较为自由)。但是注意，如果想要发布静态页面，一般项目仓库下需要将静态页面代码提交到gh-pages分支上，而username.github.io为名字的仓库中只需要将代码提交到master分支上即可。
 
 ### jekyll是什么
 
-看看来自[官方网站](http://jekyll.bootcss.com/docs/home/)的定义:
+看看来自[jekyll官方网站](http://jekyll.bootcss.com/docs/home/)的定义:
 
-> Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过[Markdown](/2015/11/09/use-jekyll/)（或者 Textile） 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。
+> Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过 [Markdown](/2015/11/09/use-jekyll/)（或者 Textile） 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 GitHub Page 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。
 
 ### 为什么要用jekyll在github上搭建blog网站
 
@@ -47,4 +47,68 @@ github提供了一种叫Github Pages的机制。它让开发者可以通过githu
 	5. cd myblog
 	6. jekyll serve # => Now browse to http://localhost:4000
 	
-## jekyll介绍
+## 使用jekyll生成个性化的博客网站
+
+### jekyll生成的website的目录结构
+
+	.
+	├── _config.yml
+	├── _drafts
+	|   ├── begin-with-the-crazy-ideas.textile
+	|   └── on-simplicity-in-technology.markdown
+	├── _includes
+	|   ├── footer.html
+	|   └── header.html
+	├── _layouts
+	|   ├── default.html
+	|   └── post.html
+	├── _posts
+	|   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
+	|   └── 2009-04-26-barcamp-boston-4-roundup.textile
+	├── _data
+	|   └── members.yml
+	├── _site
+	└── index.html
+
+其中   
+a. _config.yml是配置文件，基本默认配置就可以满足要求。详情见官网 [配置文件](http://jekyll.bootcss.com/docs/configuration/)    
+b. _drafts是草稿文件夹    
+c. _includes是包含文件的文件夹     
+d. _layouts是页面框架的文件夹  
+e. _posts是发布的blog的文件夹   
+
+### index.html
+
+你可能需要知道以下几件事情(ruby大神就可以忽略)：
+
+1. 关于index.html这个页面，主要是作为网站的首页而存在的。
+
+2. 其中`for post in site.posts `循环包裹的代码段主要是遍历了`_post`文件夹中的所有文件信息。
+
+3. 它通过头信息来加载对应的layout，比如：
+
+	---
+	layout: post
+	title: Blogging Like a Hacker
+	---
+
+	于是头信息下面的内容就会以content的形式展示在layout的content中
+
+### layouts
+
+你可能需要知道以下几件事情(ruby大神就可以忽略)：
+
+1. include 会包含_include目录下的指定文件
+
+2. 通过`{ { content } }`来输出引用方的内容
+
+### 找个牛逼的模版开工吧
+
+最后，在网上找个别人写的页面或者分享的主题，将代码拆分装填到你的jekyll框架中。jekyll serve一下，一切搞定！
+
+
+
+
+
+
+

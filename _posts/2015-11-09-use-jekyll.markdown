@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "学习jekyll编写blog之语言篇"
+title:      "学习jekyll编写blog之语言"
 subtitle:   "markdown入门"
 date:   2015-11-09
 author:     "Simon"
