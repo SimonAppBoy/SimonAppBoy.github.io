@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "学习markdown"
-subtitle:   "使用markdown编写blog示例 "
+title:      "学习jekyll编写blog"
+subtitle:   "markdown入门"
 date:   2015-11-09
 author:     "Simon"
 header-img: "img/home-bg.jpg"
