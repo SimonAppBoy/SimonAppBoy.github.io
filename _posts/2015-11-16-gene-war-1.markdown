@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "《基因战争》：一切家庭冲突的根源（一）"
+title:      "《基因战争》：一切家庭冲突的根源(一)"
 subtitle:   "从婴儿开始的战争"
 date:   2015-11-16
 author:     "Simon"
